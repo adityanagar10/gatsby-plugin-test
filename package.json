@@ -1,0 +1,31 @@
+{
+  "name": "gatsby-plugin",
+  "version": "1.0.0",
+  "description": "Gatsby Test Plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir ./ --source-maps",
+    "watch": "babel src --out-dir ./ --source-maps --watch",
+    "lint": "eslint --ext js ./ --cache",
+    "format": "prettier --write 'src/*.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.0"
+  }
+}
